@@ -1,5 +1,5 @@
 <template>
-	<div class="page_index">
+	<div class="page_about">
 		<NuxtLink to="/">Главная</NuxtLink>
 		<NuxtLink to="/about">О нас</NuxtLink>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae
@@ -222,7 +222,9 @@ import pageMixin from '@/mixins/pageMixin.js';
 
 export default {
 	mixins: [
-		pageMixin(),
+		pageMixin({
+			useLenis: false,
+		}),
 	],
 };
 </script>
