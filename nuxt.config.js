@@ -21,10 +21,18 @@ export default {
 	css: [
 		'@/assets/style/main.scss',
 	],
-	plugins: [],
+	plugins: [
+		'@/plugins/globals',
+	],
 	components: true,
 	buildModules: [
 		'@nuxtjs/eslint-module',
+		['@/plugins/icons', [
+			{
+				folder: './assets/icons',
+				result: './components/Icons.vue',
+			},
+		]],
 	],
 	modules: [
 		'@nuxtjs/axios',

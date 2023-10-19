@@ -1,15 +1,13 @@
 <template>
-	<div class="layout layout_default">
-		<Nuxt ref="page" class="page" />
-	</div>
+	<main class="layout-default">
+		<Nuxt class="page" />
+		<Icons />
+	</main>
 </template>
 
 <style lang="scss" scoped>
-.layout {
+.layout-default {
 	max-height: 100vh;
 	overflow-y: scroll;
-}
-
-.page {
 }
 </style>
