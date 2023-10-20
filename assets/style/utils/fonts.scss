@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'Philosopher';
+	src: url('@/assets/fonts/Philosopher-Italic.eot');
+	src: local('Philosopher Italic'), local('Philosopher-Italic'),
+	url('@/assets/fonts/Philosopher-Italic.eot?#iefix') format('embedded-opentype'),
+	url('@/assets/fonts/Philosopher-Italic.woff2') format('woff2'),
+	url('@/assets/fonts/Philosopher-Italic.woff') format('woff'),
+	url('@/assets/fonts/Philosopher-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Philosopher';
+	src: url('@/assets/fonts/Philosopher-Bold.eot');
+	src: local('Philosopher Bold'), local('Philosopher-Bold'),
+	url('@/assets/fonts/Philosopher-Bold.eot?#iefix') format('embedded-opentype'),
+	url('@/assets/fonts/Philosopher-Bold.woff2') format('woff2'),
+	url('@/assets/fonts/Philosopher-Bold.woff') format('woff'),
+	url('@/assets/fonts/Philosopher-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Philosopher';
+	src: url('@/assets/fonts/Philosopher-Regular.eot');
+	src: local('Philosopher Regular'), local('Philosopher-Regular'),
+	url('@/assets/fonts/Philosopher-Regular.eot?#iefix') format('embedded-opentype'),
+	url('@/assets/fonts/Philosopher-Regular.woff2') format('woff2'),
+	url('@/assets/fonts/Philosopher-Regular.woff') format('woff'),
+	url('@/assets/fonts/Philosopher-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Philosopher';
+	src: url('@/assets/fonts/Philosopher-BoldItalic.eot');
+	src: local('Philosopher Bold Italic'), local('Philosopher-BoldItalic'),
+	url('@/assets/fonts/Philosopher-BoldItalic.eot?#iefix') format('embedded-opentype'),
+	url('@/assets/fonts/Philosopher-BoldItalic.woff2') format('woff2'),
+	url('@/assets/fonts/Philosopher-BoldItalic.woff') format('woff'),
+	url('@/assets/fonts/Philosopher-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+

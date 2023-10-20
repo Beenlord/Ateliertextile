@@ -1,0 +1,11 @@
+@function rem($num) {
+	@return calc(var(--index) * #{$num});
+}
+
+@function plus($a, $b) {
+	@return calc(#{$a} + #{$b});
+}
+
+@function font($name) {
+	@return $name, Arial, Serif;
+}

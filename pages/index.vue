@@ -1,7 +1,9 @@
 <template>
-	<div class="page_index">
-		<Icon id="logo" />
-	</div>
+	<main class="page_index">
+		<Banner
+			background="/pages/index/images/00.jpg"
+		/>
+	</main>
 </template>
 
 <script>
@@ -9,7 +11,9 @@ import pageMixin from '@/mixins/pageMixin.js';
 
 export default {
 	mixins: [
-		pageMixin(),
+		pageMixin({
+			pageName: 'Домашняя',
+		}),
 	],
 };
 </script>

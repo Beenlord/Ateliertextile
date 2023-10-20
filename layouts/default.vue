@@ -1,5 +1,6 @@
 <template>
 	<main class="layout-default">
+		<Header />
 		<Nuxt class="page" />
 		<Icons />
 	</main>

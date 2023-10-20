@@ -1,0 +1,15 @@
+@function ffPhilosopher() {
+	@return font('Philosopher');
+}
+
+.f-block {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	&__container {
+		width: 100vw;
+		max-width: var(--mw-container);
+		padding: 0 var(--p-container);
+	}
+}

@@ -4,35 +4,43 @@
 	margin: 0;
 }
 
+@import "utils/var";
+@import "utils/mixins";
+@import "utils/fonts";
+
 :root {
-	--index: calc(((100vw / 1920) + (100vh / 1080)) * 4);
+	--index: calc(((100vw / 1920) + (100vh / 1080)) * 4); // 8px
+
+	--clr-white: #{$CLR_WHITE};
+	--clr-black: #{$CLR_BLACK};
+	--clr-blackout: #{$CLR_BLACKOUT};
+	--clr-beige: #{$CLR_BEIGE};
+	--clr-strawberry: #{$CLR_STRAWBERRY};
+	--clr-bronze: #{$CLR_BRONZE};
+	--clr-grey: #{$CLR_GREY};
+
+	// Максимальная ширина секции
+	--mw-container: 1140px;
+	--p-container: 16px;
 }
+
+@import "staff/lenis";
+@import "utils/framework";
 
 html,
 body {
-	font-size: calc(var(--index) * 2);
-
-	color: #000;
-	background: #fff;
+	font-size: rem(2);
+	line-height: plus(1em, 20%);
+	font-family: ffPhilosopher();
+	color: var(--clr-black);
+	background: var(--clr-beige);
 }
 
-.lenis {
-	height: auto;
-	overflow: hidden;
-}
+a {
+	color: inherit;
+	text-decoration: none;
 
-.lenis.lenis-smooth {
-	scroll-behavior: auto;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-	overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-	overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-	pointer-events: none;
+	&:hover {
+		text-decoration: underline;
+	}
 }

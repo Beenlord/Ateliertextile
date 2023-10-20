@@ -1,7 +1,9 @@
+import { mapGetters } from 'vuex';
 import Lenis from '@studio-freight/lenis';
 
 export default function(opt) {
 	opt = {
+		pageName: null,
 		useLenis: true,
 		...opt,
 	};
@@ -10,6 +12,16 @@ export default function(opt) {
 		data() {
 			return {
 				lenis: null,
+			};
+		},
+		computed: {
+			...mapGetters({
+				siteName: 'getSiteName',
+			}),
+		},
+		head() {
+			return {
+				title: this.siteName(opt.pageName),
 			};
 		},
 		mounted() {
