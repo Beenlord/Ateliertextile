@@ -36,6 +36,11 @@ body {
 	background: var(--clr-beige);
 }
 
+img {
+	display: block;
+	pointer-events: none;
+}
+
 a {
 	color: inherit;
 	text-decoration: none;

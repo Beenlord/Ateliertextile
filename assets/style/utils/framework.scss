@@ -2,6 +2,25 @@
 	@return font('Philosopher');
 }
 
+@function ffPTsans() {
+	@return font('PT Sans');
+}
+
+h1,
+h2 {
+	font-size: rem(5);
+	font-family: ffPhilosopher();
+	line-height: plus(1em, 20%);
+	font-weight: 300;
+}
+
+p {
+	font-size: rem(2);
+	font-family: ffPTsans();
+	line-height: plus(1em, 20%);
+	font-weight: 400;
+}
+
 .f-block {
 	width: 100%;
 	display: flex;
@@ -11,5 +30,17 @@
 		width: 100vw;
 		max-width: var(--mw-container);
 		padding: 0 var(--p-container);
+	}
+}
+
+.f-text {
+
+	h1:not(:last-child),
+	h2:not(:last-child) {
+		margin-bottom: rem(1.5);
+	}
+
+	p:not(:last-child) {
+		margin-bottom: rem(1);
 	}
 }

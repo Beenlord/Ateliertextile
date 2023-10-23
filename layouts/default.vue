@@ -1,5 +1,5 @@
 <template>
-	<main class="layout-default">
+	<main class="layout layout-default">
 		<Header />
 		<Nuxt class="page" />
 		<Icons />
@@ -8,7 +8,7 @@
 
 <style lang="scss" scoped>
 .layout-default {
-	max-height: 100vh;
-	overflow-y: scroll;
+	//height: 100vh;
+	//overflow-y: scroll;
 }
 </style>
