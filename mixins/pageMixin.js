@@ -1,5 +1,5 @@
 import { mapGetters } from 'vuex';
-import Lenis from '@studio-freight/lenis';
+// import Lenis from '@studio-freight/lenis';
 
 export default function(opt) {
 	opt = {
@@ -26,16 +26,15 @@ export default function(opt) {
 		},
 		mounted() {
 			if (opt.useLenis) {
-				const wrapper = this.$el.parentNode;
-				const content = this.$el;
+				// const wrapper = this.$el.parentNode;
+				// const content = this.$el;
 
-				this.lenis = new Lenis({
-					wrapper,
-					content,
-				});
-
-				this.raf();
+				// this.lenis = new Lenis({
+				// 	wrapper,
+				// 	content,
+				// });
 			}
+			requestAnimationFrame(this.raf);
 		},
 		beforeDestroy() {
 			if (this.lenis) {
@@ -47,8 +46,8 @@ export default function(opt) {
 			raf(time) {
 				if (this.lenis) {
 					this.lenis.raf(time);
-					requestAnimationFrame(this.raf);
 				}
+				requestAnimationFrame(this.raf);
 			},
 		},
 	};
